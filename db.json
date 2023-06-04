@@ -7,16 +7,58 @@
       "id": 1
     },
     {
-      "name": "srinathsam",
-      "email": "abc@gmail.com",
-      "password": "abc@1230",
+      "name": "SRINATH",
+      "password": "qwdef",
+      "email": "samyuktha@gmail.com",
       "id": 2
     },
     {
-      "name": "samyuktha",
-      "password": "ba",
-      "email": "bavbnjk@gmail.com",
+      "name": "sappa venkata pavana siva sai naga samyuktha",
+      "password": "erdtfgyhujmk",
+      "email": "sappawedsbakara@gmail.com",
       "id": 3
+    },
+    {
+      "name": "werfqwer",
+      "password": "wqe",
+      "email": "qWADESF",
+      "id": 4
+    },
+    {
+      "name": "sappa venkata pavana s s naga samyuktha",
+      "password": "ilovesrinath",
+      "email": "samyuktha@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "sappa samyuktha srinath",
+      "password": "fcgvbhjnkml23",
+      "email": "samyuktha@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "SRINATH",
+      "password": "_9zMMu$?H}A*,2~",
+      "email": "123er@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "",
+      "password": "_9zMMu$?H}A*,2~",
+      "email": "",
+      "id": 8
+    },
+    {
+      "name": "",
+      "password": "_9zMMu$?H}A*,2~",
+      "email": "",
+      "id": 9
+    },
+    {
+      "name": "",
+      "password": "_9zMMu$?H}A*,2~",
+      "email": "",
+      "id": 10
     }
   ]
 }
