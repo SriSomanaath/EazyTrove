@@ -1,6 +1,6 @@
-<div class="add-product">
-    <h1>Add New Product</h1>
-    <p class="p_message">{{addProductMessage}}</p>
+<div class="update-product">
+    <h1>Update Product</h1>
+    <!-- <p class="p_message">{{addProductMessage}}</p> -->
     <form #addProduct = "ngForm" (ngSubmit)="submit(addProduct.value)" class = "common-form">
         <input class="form-input" 
         type="text" ngModel 
@@ -31,6 +31,6 @@
         name="image" 
         placeholder="Enter Product URL"
         />
-        <button  class="form-button">Add Product</button>
+        <button  class="form-button">Update Product</button>
     </form>
 </div>
