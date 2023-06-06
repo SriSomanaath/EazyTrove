@@ -20,7 +20,7 @@ constructor(private product:ProductService){}
 ngOnInit():void{
   this.list();
 }
-deleteProduct(id:number){
+    deleteProduct(id:number){
   console.warn("test id",id);
   this.product.deleteProduct(id).subscribe((result)=>{
    if(result){

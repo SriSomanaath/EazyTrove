@@ -10,10 +10,10 @@
   "products": [
     {
       "name": "Iphon14pro",
-      "price": ",49,999",
+      "price": "1,49,998",
       "category": "smartPhone",
       "Description": "hello users this is my brand new Iphone",
-      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-deeppurple?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1663703840578",
+      "image": "https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg",
       "id": 3
     },
     {
@@ -22,6 +22,86 @@
       "category": "laptop",
       "Description": "apple laptop",
       "image": "https://m.media-amazon.com/images/I/61Ph34V0YAL._SL1500_.jpg",
+      "id": 5
+    },
+    {
+      "name": "macbookpro15",
+      "price": "1,98,998",
+      "category": "laptop",
+      "Description": "apple ilaptop",
+      "image": "https://m.media-amazon.com/images/I/61ZQEkRzQaL._SL1080_.jpg",
+      "id": 5
+    },
+    {
+      "name": "Iphon14pro",
+      "price": "1,49,998",
+      "category": "smartPhone",
+      "Description": "hello users this is my brand new Iphone",
+      "image": "https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg",
+      "id": 3
+    },
+    {
+      "name": "macbookpro",
+      "price": "1,99,999",
+      "category": "laptop",
+      "Description": "apple laptop",
+      "image": "https://m.media-amazon.com/images/I/61Ph34V0YAL._SL1500_.jpg",
+      "id": 5
+    },
+    {
+      "name": "macbookpro15",
+      "price": "1,98,998",
+      "category": "laptop",
+      "Description": "apple ilaptop",
+      "image": "https://m.media-amazon.com/images/I/61ZQEkRzQaL._SL1080_.jpg",
+      "id": 5
+    },
+    {
+      "name": "Iphon14pro",
+      "price": "1,49,998",
+      "category": "smartPhone",
+      "Description": "hello users this is my brand new Iphone",
+      "image": "https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg",
+      "id": 3
+    },
+    {
+      "name": "macbookpro",
+      "price": "1,99,999",
+      "category": "laptop",
+      "Description": "apple laptop",
+      "image": "https://m.media-amazon.com/images/I/61Ph34V0YAL._SL1500_.jpg",
+      "id": 5
+    },
+    {
+      "name": "macbookpro15",
+      "price": "1,98,998",
+      "category": "laptop",
+      "Description": "apple ilaptop",
+      "image": "https://m.media-amazon.com/images/I/61ZQEkRzQaL._SL1080_.jpg",
+      "id": 5
+    },
+    {
+      "name": "Iphon14pro",
+      "price": "1,49,998",
+      "category": "smartPhone",
+      "Description": "hello users this is my brand new Iphone",
+      "image": "https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg",
+      "id": 3
+    },
+    {
+      "name": "macbookpro",
+      "price": "1,99,999",
+      "category": "laptop",
+      "Description": "apple laptop",
+      "image": "https://m.media-amazon.com/images/I/61Ph34V0YAL._SL1500_.jpg",
+      "id": 5
+    },
+    {
+      "name": "macbookpro15",
+      "price": "1,98,998",
+      "category": "laptop",
+      "Description": "apple ilaptop",
+      "image": "https://m.media-amazon.com/images/I/61ZQEkRzQaL._SL1080_.jpg",
       "id": 5
     }
   ]

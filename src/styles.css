@@ -29,5 +29,13 @@ body{
 color:red;
 }
 .p_message{
-    
+    color: green;
+}
+.carousel-caption{
+    background-color: #00000082;
+    border-radius: 5px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color:black ;
+    border-radius: 5px;
 }
