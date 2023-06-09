@@ -36,15 +36,23 @@
         placeholder="Enter User Email"
         name="email"
         ngModel
-        />
+        #email="ngModel"
+        required
+        /> 
+        <p class="invalid-input"><span *ngIf="email.invalid && email.touched">Please Enter Valid Value</span></p>
         <input
         class="form-input"
         type="password"
         placeholder="Enter User password"
         name="password"
         ngModel
+        minlength="2"
+        maxlength="20"
+        #password="ngModel"
+        required
         />
-        <button class="form-button">Login Up</button>
+        <p class="invalid-input"><span *ngIf="password.invalid && password.touched">Please Enter Valid Value</span></p>
+        <button [disabled]="userLogin.invalid" class="form-button">Login Up</button>
         <p>Want to create an account?<a (click)="openSignUp()">Click here</a></p> 
     </form>
  </div>
