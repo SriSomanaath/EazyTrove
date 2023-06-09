@@ -1,4 +1,6 @@
 import { Component,OnInit } from '@angular/core';
+import { ProductService } from '../services/product.service';
+import { product } from '../data-type';
 import { Router} from '@angular/router';
 
 @Component({
@@ -9,15 +11,14 @@ import { Router} from '@angular/router';
 export class HeaderComponent {
 menuType:string = 'default';
 sellerName:string = '';
+searchResult:undefined | product[];
 
-  constructor(private route:Router){}
+  constructor(private route:Router,private product:ProductService){}
 
  ngOnInit(): void{
   this.route.events.subscribe((val:any)=>{
     if(val.url){
-      console.warn(val.url);
       if(localStorage.getItem('seller') && val.url.includes('seller')){
-        console.warn("in seller area");
         this.menuType = 'seller';
         if(localStorage.getItem('seller')){
           let sellerStore = localStorage.getItem('seller');
@@ -25,7 +26,6 @@ sellerName:string = '';
           this.sellerName =  sellerData.name
         }
       }else{
-        console.warn("outsdie the seller");
         this.menuType = 'default';
       }
     }
@@ -35,6 +35,25 @@ sellerName:string = '';
     localStorage.removeItem('seller');
     this.route.navigate(['/']);
   }
-
+  searchProduct(query:KeyboardEvent){
+    if(query){
+      const element = query.target as HTMLInputElement;
+      this.product.searchProducts(element.value).subscribe((result)=>{
+        if(result.length>5){
+           result.length = 5;
+        }
+        this.searchResult = result;
+      });
+    }
+  }
+  hideSearch(){
+    this.searchResult = undefined
+  }
+  redirectToDetails(id:number){
+    this.route.navigate(['/details/'+id]);
+  }
+  submitSearch(val:string){
+    this.route.navigate([`search/${val}`])
+  }
 
 }
