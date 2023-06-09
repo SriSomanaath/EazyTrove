@@ -21,7 +21,7 @@ export class UserAuthComponent {
   }
 
   login(data:login){
-    console.warn("hyn",data);
+    this.user.userLogin(data);
   }
   openSignUp(){
     this.showLogin = false;
