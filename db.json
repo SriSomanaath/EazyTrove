@@ -5,6 +5,12 @@
       "email": "abc@gmail.com",
       "password": "abc@1230",
       "id": 1
+    },
+    {
+      "name": "abc@gmail.com",
+      "password": "abc@1230",
+      "email": "abc@gmail.com",
+      "id": 2
     }
   ],
   "products": [
@@ -84,6 +90,38 @@
       "description": "Noise smart watch for man and women both",
       "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
       "id": 9
+    }
+  ],
+  "users": [
+    {
+      "name": "SRINATH",
+      "email": "abc@gmail.com",
+      "password": "abc@1230",
+      "id": 1
+    },
+    {
+      "name": "samyuktha",
+      "email": "abc@gmail.com",
+      "password": "abc@1230",
+      "id": 2
+    },
+    {
+      "name": "",
+      "email": "abc@gmail.com",
+      "password": "abc@1230",
+      "id": 3
+    },
+    {
+      "name": "samyuktha",
+      "email": "abc@gmail.com",
+      "password": "abc@1230",
+      "id": 4
+    },
+    {
+      "name": "samyui",
+      "email": "abc@gmail.com",
+      "password": "abc@1230",
+      "id": 5
     }
   ]
 }

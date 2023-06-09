@@ -12,8 +12,9 @@ export class HeaderComponent {
 menuType:string = 'default';
 sellerName:string = '';
 searchResult:undefined | product[];
+userName:string = "";
 
-  constructor(private route:Router,private product:ProductService){}
+constructor(private route:Router,private product:ProductService){}
 
  ngOnInit(): void{
   this.route.events.subscribe((val:any)=>{
@@ -25,8 +26,13 @@ searchResult:undefined | product[];
           let sellerData = sellerStore && JSON.parse(sellerStore)[0];
           this.sellerName =  sellerData.name
         }
+      }else if(localStorage.getItem('user')){
+        let userStore = localStorage.getItem('user');
+        let userData = userStore && JSON.parse(userStore);
+        this.userName= userData.name;
+        this.menuType='user';
       }else{
-        this.menuType = 'default';
+        this.menuType = 'default'; 
       }
     }
   })
@@ -34,6 +40,11 @@ searchResult:undefined | product[];
   logout(){
     localStorage.removeItem('seller');
     this.route.navigate(['/']);
+  }
+
+  userLogout(){
+    localStorage.removeItem('user');
+    this.route.navigate(['/user-auth']);
   }
   searchProduct(query:KeyboardEvent){
     if(query){

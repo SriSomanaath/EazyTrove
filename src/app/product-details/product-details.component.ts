@@ -11,7 +11,7 @@ import { product } from '../data-type';
 export class ProductDetailsComponent implements OnInit{
   productData:undefined | product;
   productQuantity:number=1;
-  quality:number=1;
+  quatity:number=1;
 
   constructor(private activeRoute:ActivatedRoute,private product:ProductService){}
 
@@ -24,9 +24,9 @@ ngOnInit():void{
   })
 }
 handleQuantity(val:string){
-if(this.productQuantity<20 && val=='plus'){
+if(this.productQuantity<20 && val==='plus'){
   this.productQuantity+=1;
-}else if(this.productQuantity>1 && val=='min'){
+}else if(this.productQuantity>1 && val==='min'){
   this.productQuantity-=1;
 }
 }
