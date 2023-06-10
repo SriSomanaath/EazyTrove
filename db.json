@@ -11,6 +11,18 @@
       "password": "abc@1230",
       "email": "abc@gmail.com",
       "id": 2
+    },
+    {
+      "name": "abc@gmail.com",
+      "password": "abc@1230",
+      "email": "abc@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "abc@gmail.com",
+      "password": "abc@1230",
+      "email": "abc@gmail.com",
+      "id": 4
     }
   ],
   "products": [

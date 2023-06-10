@@ -7,9 +7,10 @@ import { UserService } from '../services/user.service';
   templateUrl: './user-auth.component.html',
   styleUrls: ['./user-auth.component.css']
 })
-export class UserAuthComponent {
+export class UserAuthComponent implements OnInit{
   showLogin:boolean = true;
-  
+  authError:string="";
+
   constructor(private user:UserService){}
 
  ngOnInit(): void{
@@ -22,6 +23,12 @@ export class UserAuthComponent {
 
   login(data:login){
     this.user.userLogin(data);
+    this.user.invalidUserAuth.subscribe((result)=>{
+      console.warn("samyuktha",result);
+      if(result){
+        this.authError="Please enter valid user details";
+      }
+    })
   }
   openSignUp(){
     this.showLogin = false;

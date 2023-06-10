@@ -11,7 +11,6 @@ import { product } from '../data-type';
 export class ProductDetailsComponent implements OnInit{
   productData:undefined | product;
   productQuantity:number=1;
-  quatity:number=1;
 
   constructor(private activeRoute:ActivatedRoute,private product:ProductService){}
 
@@ -30,4 +29,16 @@ if(this.productQuantity<20 && val==='plus'){
   this.productQuantity-=1;
 }
 }
+
+AddToCart(){
+  if(this.productData){
+    this.productData.quantity = this.productQuantity;
+    if(!localStorage.getItem('user')){
+      this.product.localAddToCart(this.productData);
+    }    
+  }
+}
+
+
+
 }
