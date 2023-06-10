@@ -135,5 +135,18 @@
       "password": "abc@1230",
       "id": 5
     }
+  ],
+  "cart": [
+    {
+      "name": "Iphon14pro",
+      "price": "1,49,998",
+      "category": "smartPhone",
+      "Description": "hello users this is my brand new Iphone",
+      "image": "https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 1,
+      "id": 1
+    }
   ]
 }

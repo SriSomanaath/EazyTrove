@@ -1,7 +1,7 @@
 import { Component,OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import { ProductService } from '../services/product.service';
-import { product } from '../data-type';
+import { product,cart } from '../data-type';
 
 @Component({
   selector: 'app-product-details',
@@ -11,6 +11,7 @@ import { product } from '../data-type';
 export class ProductDetailsComponent implements OnInit{
   productData:undefined | product;
   productQuantity:number=1;
+  removeCart = false;
 
   constructor(private activeRoute:ActivatedRoute,private product:ProductService){}
 
@@ -20,6 +21,17 @@ ngOnInit():void{
   productId && this.product.getProduct(productId).subscribe((result)=>{
      console.warn(result);
      this.productData=result;
+
+     let cartData = localStorage.getItem('localCart');
+     if(productId && cartData){
+      let items = JSON.parse(cartData);
+      items = items.filter((item:product)=>productId == item.id.toString());
+      if(items){
+        this.removeCart = true;
+      }else{
+        this.removeCart = false;
+      }
+     }
   })
 }
 handleQuantity(val:string){
@@ -30,15 +42,34 @@ if(this.productQuantity<20 && val==='plus'){
 }
 }
 
-AddToCart(){
+addToCart(){
   if(this.productData){
     this.productData.quantity = this.productQuantity;
     if(!localStorage.getItem('user')){
       this.product.localAddToCart(this.productData);
-    }    
+      this.removeCart = true;
+    } else{
+      let user = localStorage.getItem('user');
+      let userId = user && JSON.parse(user).id;
+      let cartData:cart={
+        ...this.productData,
+        userId,
+        productId:this.productData.id,
+      }
+      delete cartData.id;
+      this.product.addToCart(cartData).subscribe((result)=>{
+        if(result){
+          alert("product is added to cart");
+        }
+      })
+
+    }   
   }
 }
-
+removeToCart(productId:number){
+  this.product.removeItemFromCart(productId);
+  this.removeCart = false;
+}
 
 
 }
