@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
+import { CartPageComponent } from './cart-page/cart-page.component';
 import { HomeComponent } from './home/home.component';
 import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
@@ -45,7 +46,11 @@ const routes: Routes = [
   {
     path:'user-auth',
     component:UserAuthComponent
-  }
+  },
+  {
+    path:'cart-page',
+    component:CartPageComponent
+  },
 ];
 
 @NgModule({
