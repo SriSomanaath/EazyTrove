@@ -106,37 +106,24 @@
   ],
   "users": [
     {
-      "name": "SRINATH",
-      "email": "abc@gmail.com",
-      "password": "abc@1230",
+      "name": "samyuktha",
+      "email": "govindalapudisrinath@gmail.com",
+      "password": "b2191cc8141cc*",
       "id": 1
-    },
-    {
-      "name": "samyuktha",
-      "email": "abc@gmail.com",
-      "password": "abc@1230",
-      "id": 2
-    },
-    {
-      "name": "",
-      "email": "abc@gmail.com",
-      "password": "abc@1230",
-      "id": 3
-    },
-    {
-      "name": "samyuktha",
-      "email": "abc@gmail.com",
-      "password": "abc@1230",
-      "id": 4
-    },
-    {
-      "name": "samyui",
-      "email": "abc@gmail.com",
-      "password": "abc@1230",
-      "id": 5
     }
   ],
   "cart": [
+    {
+      "name": "macbookpro15",
+      "price": "1,98,998",
+      "category": "laptop",
+      "Description": "apple ilaptop",
+      "image": "https://m.media-amazon.com/images/I/61ZQEkRzQaL._SL1080_.jpg",
+      "quantity": 1,
+      "productId": 3,
+      "userId": 1,
+      "id": 2
+    },
     {
       "name": "Iphon14pro",
       "price": "1,49,998",
@@ -144,9 +131,9 @@
       "Description": "hello users this is my brand new Iphone",
       "image": "https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg",
       "quantity": 1,
-      "userId": 1,
       "productId": 1,
-      "id": 1
+      "userId": 1,
+      "id": 3
     }
   ]
 }
