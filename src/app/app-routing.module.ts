@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SearchComponent } from './search/search.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
@@ -51,6 +52,10 @@ const routes: Routes = [
     path:'cart-page',
     component:CartPageComponent
   },
+  {
+    path:'check-out',
+    component:CheckoutComponent
+  }
 ];
 
 @NgModule({

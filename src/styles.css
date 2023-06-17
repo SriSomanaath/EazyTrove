@@ -47,3 +47,6 @@ color:red;
 button:disabled{
     cursor:not-allowed;
 }
+.max-width{
+    width: 100%;
+}
