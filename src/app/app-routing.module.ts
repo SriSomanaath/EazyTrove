@@ -8,6 +8,7 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SearchComponent } from './search/search.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
+import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
@@ -55,6 +56,10 @@ const routes: Routes = [
   {
     path:'check-out',
     component:CheckoutComponent
+  },
+  {
+    path:'my-orders',
+    component:MyOrdersComponent
   }
 ];
 

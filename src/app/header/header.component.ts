@@ -2,7 +2,7 @@ import { Component,OnInit } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { product } from '../data-type';
 import { Router} from '@angular/router';
-
+ 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
