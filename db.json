@@ -28,7 +28,7 @@
   "products": [
     {
       "name": "Iphon14pro",
-      "price": "1,49,998",
+      "price": "149998",
       "category": "smartPhone",
       "Description": "hello users this is my brand new Iphone",
       "image": "https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg",
@@ -36,7 +36,7 @@
     },
     {
       "name": "macbookpro",
-      "price": "1,99,999",
+      "price": "199999",
       "category": "laptop",
       "Description": "apple laptop",
       "image": "https://m.media-amazon.com/images/I/61Ph34V0YAL._SL1500_.jpg",
@@ -44,7 +44,7 @@
     },
     {
       "name": "macbookpro15",
-      "price": "1,98,998",
+      "price": "198998",
       "category": "laptop",
       "Description": "apple ilaptop",
       "image": "https://m.media-amazon.com/images/I/61ZQEkRzQaL._SL1080_.jpg",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Iphon14pro",
-      "price": "1,49,998",
+      "price": "149998",
       "category": "smartPhone",
       "Description": "hello users this is my brand new Iphone",
       "image": "https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg",
@@ -115,7 +115,7 @@
   "cart": [
     {
       "name": "macbookpro15",
-      "price": "1,98,998",
+      "price": "198998",
       "category": "laptop",
       "Description": "apple ilaptop",
       "image": "https://m.media-amazon.com/images/I/61ZQEkRzQaL._SL1080_.jpg",
@@ -126,7 +126,7 @@
     },
     {
       "name": "Iphon14pro",
-      "price": "1,49,998",
+      "price": "149998",
       "category": "smartPhone",
       "Description": "hello users this is my brand new Iphone",
       "image": "https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg",
@@ -134,6 +134,17 @@
       "productId": 1,
       "userId": 1,
       "id": 3
+    },
+    {
+      "name": "macbookpro",
+      "price": "199999",
+      "category": "laptop",
+      "Description": "apple laptop",
+      "image": "https://m.media-amazon.com/images/I/61Ph34V0YAL._SL1500_.jpg",
+      "quantity": 3,
+      "productId": 2,
+      "userId": 1,
+      "id": 4
     }
   ]
 }
