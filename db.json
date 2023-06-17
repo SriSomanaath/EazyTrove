@@ -147,22 +147,5 @@
       "id": 4
     }
   ],
-  "orders": [
-    {
-      "email": "govindalapudisrinath@gmail.com",
-      "address": "love World",
-      "contact": "9492203556",
-      "totalPrice": 949093,
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "email": "govindalapudisrinath@gmail.com",
-      "address": "g",
-      "contact": "9492203557",
-      "totalPrice": 949093,
-      "userId": 1,
-      "id": 2
-    }
-  ]
+  "orders": []
 }
